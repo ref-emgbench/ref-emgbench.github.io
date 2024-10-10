@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EMGBench</title>
+    <title>Ref-EMGBench</title>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -36,14 +36,13 @@
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
                         <h1 class="title is-1 publication-title">
-                          <img src="assets/images/logo.png" class="small-image" style="width: 70px; height: 35px; vertical-align: middle; margin-top: -8px; margin-right: 4px">Benchmarking Out-of-Distribution Generalization and Adaptation for Electromyography
+                          <!-- <img src="assets/images/logo.png" class="small-image" style="width: 70px; height: 35px; vertical-align: middle; margin-top: -8px; margin-right: 4px">Benchmarking Out-of-Distribution Generalization and Adaptation for Electromyography -->
                         </h1>
                         <div class="is-size-5 publication-authors">
                             <span class="author-block">
+                                <a target="_blank">Lihong Jin</a><sup>*</sup>,
                                 <a target="_blank" href="https://jehanyang.github.io/about/">
                                     Jehan Yang</a><sup>*</sup>,
-                                <a target="_blank">Maxwell Soh</a><sup>*</sup>,
-                                <a target="_blank">Vivianna Lieu</a><sup></sup>,
                                 <a target="_blank"
                                     href="https://www.meche.engineering.cmu.edu/directory/bios/weber-douglas.html/">Douglas J. Weber</a><sup></sup>,
                                 <a target="_blank"
@@ -80,7 +79,7 @@
                                 </span> -->
 
                                 <span class="link-block">
-                                    <a target="_blank" href="https://github.com/maxwellsoh/emgBenchmarking"
+                                    <a target="_blank" href="https://github.com/ref-emgbench/ref-emgbench"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
@@ -89,7 +88,7 @@
                                     </a>
                                 </span> 
 
-                                <span class="link-block">
+                                <!-- <span class="link-block">
                                     <a target="_blank" href="https://huggingface.co/datasets/jehanyang/FlexWear-HD"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
@@ -97,7 +96,7 @@
                                         </span>
                                         <span>FlexWear-HD Dataset</span>
                                     </a>
-                                </span>
+                                </span> -->
 
 
                             </div>
@@ -127,7 +126,7 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p style="font-size: 125%">
-                            This paper introduces the first generalization and adaptation benchmark using machine learning for evaluating 
+                            <!-- This paper introduces the first generalization and adaptation benchmark using machine learning for evaluating 
                             out-of-distribution performance of electromyography (EMG) classification algorithms. The ability of an EMG 
                             classifier to handle inputs drawn from a different distribution than the training distribution is critical 
                             for real-world deployment as a control interface. By predicting the user’s intended gesture using EMG signals, 
@@ -138,8 +137,19 @@
                             in a benchmark. Among these, a new dataset is introduced, featuring a novel, easy-to-wear high-density EMG 
                             wearable for data collection. The lack of open-source benchmarks has made comparing accuracy results between 
                             papers challenging for the EMG research community. This new benchmark provides researchers with a valuable 
-                            resource for analyzing practical measures of out-of-distribution performance for EMG datasets.
-
+                            resource for analyzing practical measures of out-of-distribution performance for EMG datasets. -->
+                            Electromyography (EMG)-based hand gesture recognition is essential for applications in prosthetics, rehabilitation, 
+                            and human-robot interaction. Despite advances in machine learning, domain shift caused by intersubject variability 
+                            often leads to degraded model performance when applying trained models to new users. In this study, we revisit the 
+                            statistical reference normalization methods to mitigate the domain shift in EMG data in a leave-one-subject-out 
+                            train-test split setting. We systematically benchmark five popular amplitude-based normalization techniques to assess 
+                            their effectiveness in subject-specific classification with varied datasets and percentages for normalization. 
+                            Experimental results show that Min-Max and Peak normalization outperform others, yielding higher classification 
+                            accuracy on EMG data. We further visualize the domain shifts in the feature space throughout the training process 
+                            and provide an analysis based on EMG signal characteristics. Our findings indicate that proper normalization significantly 
+                            reduces intersubject variability of EMG samples, enhancing model adaptation and providing insights for bridging domain 
+                            shifts in future EMG-based gesture recognition research. The benchmark code for domain adaptation approaches on EMG 
+                            signals is available at \url{ref-emgbench.github.io}.
 <br>
 <br>
 
